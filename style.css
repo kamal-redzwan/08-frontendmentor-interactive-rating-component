@@ -32,13 +32,14 @@ body {
   justify-content: center;
 
   background-color: var(--clr-neutral-very-dark-blue);
-  
+
   color: var(--clr-neutral-white);
   font-family: var(--font-family);
   font-size: var(--fs-normal);
 }
 
-svg, img {
+svg,
+img {
   display: inline-block;
   width: 100%;
 }
@@ -55,9 +56,8 @@ svg, img {
 }
 
 .star {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
 
   background-color: var(--clr-neutral-dark-grey);
   width: 40px;
@@ -70,7 +70,8 @@ svg, img {
   font-weight: var(--fw-bold);
 }
 
-.body {
+.body,
+.thankyou-copy {
   color: var(--clr-neutral-light-grey);
   font-weight: var(--fw-normal);
 }
@@ -111,7 +112,7 @@ svg, img {
   letter-spacing: 1.5px;
 
   border-radius: 50vh;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .submit:hover {
@@ -124,13 +125,17 @@ svg, img {
   color: var(--clr-neutral-dark-grey);
 }
 
+.errorMsg {
+  text-align: center;
+}
+
 .thankyou-card {
   display: flex;
   flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-  gap: 1rem
+  gap: 1rem;
 }
 
 .thankyou-image {
@@ -139,10 +144,12 @@ svg, img {
 
 .selected-copy {
   background-color: var(--clr-neutral-dark-grey);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 50vh;
 
   color: var(--clr-primary-orange);
 }
 
-.thankyou-copy {}
+.thankyou-copy {
+  text-align: center;
+}
