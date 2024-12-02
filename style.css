@@ -38,10 +38,10 @@ body {
   font-size: var(--fs-normal);
 }
 
-/* svg, img {
+svg, img {
   display: inline-block;
   width: 100%;
-} */
+}
 
 .card {
   max-width: 400px;
@@ -123,3 +123,26 @@ body {
   background-color: var(--clr-neutral-white);
   color: var(--clr-neutral-dark-grey);
 }
+
+.thankyou-card {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  gap: 1rem
+}
+
+.thankyou-image {
+  width: 250px;
+}
+
+.selected-copy {
+  background-color: var(--clr-neutral-dark-grey);
+  padding: .5rem 1rem;
+  border-radius: 50vh;
+
+  color: var(--clr-primary-orange);
+}
+
+.thankyou-copy {}
